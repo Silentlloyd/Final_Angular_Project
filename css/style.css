@@ -1,0 +1,57 @@
+body {
+background-image:url("http://chic.uol.com.br/system/assets/2012/6/18/149378/gallery/proen%C3%A7a-noir.jpg");
+  background-size: cover;
+}
+  #barbershop{
+  background-image: no-repeat center center fixed;
+}
+
+body {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.mainContainer {
+/*   background: #f7f7f7; */
+  width: 75vw;
+  margin: 0 auto;
+  min-height: 200px;
+/*   border-top: 40px solid #eaeaea; */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+/*   display: block; */
+}
+li {
+  text-align: center;
+  background: blue;
+  color: white;
+  font-size: 1.2em;
+  width: 35vw;
+  margin: 0px auto;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+input {
+  padding: 10px;
+  background: grey;
+  color: white;
+  font-size: 1.5em;
+  width: 35vw;
+}
+
+.M {
+  background-color: black;
+}
+
+.F {
+  background-color: grey;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}

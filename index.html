@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>The Barber's Contact List</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="barbershop">
+ <div class="mainContainer" 
+     ng-app="codeList"
+     ng-controller="code.list">
+  <h1 class="title" ng-bind="title"></h1>
+  <input type="text" ng-model="inputFilter"/> <br />
+  <button ng-click="alpha='firstName'">
+    First Name
+  </button>
+   <button ng-click="alpha='lastName'">
+    Last Name
+  </button>
+  <button ng-click="alpha='gender'">Gender</button>
+     <button class="btn btn-default">
+     <span class="glyphicon glyphicon-ok"></span>
+     <span>Add</span> <br />
+     <span><button ng-click="alph='Save()'">Save</span </button>
+  </button>
+       <button ng-click="alph='Save()'">Submit</span </button>
+  <button ng-click="alpha='emailTo'">Email</button>
+  <ul >
+    <li ng-repeat="boom in list | filter: inputFilter | orderBy: alpha" class="{{boom.gender}}">
+      {{$index + 1}}
+     <span class="one">{{boom.firstName}}</span>
+     <span class="two">{{boom.lastName}}</span> <span>{{boom.gender}}</span>
+    <span class="three">{{boom.emailTo}}</span>
+    </li>
+  </ul>
+ </div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
